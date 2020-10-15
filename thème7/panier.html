@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body{background-color: rgb(255, 254, 246);}
+    </style>
+   
+    <title>Panier</title>
+</head>
+<body>
+    <div class="container">
+        <a href="panier.html"> <button style="float: right;"><i style="color: rgb(199, 126, 126) ; font-size: 24px; float: right;" class="fa fa-shopping-cart">1</i> </button> </a>
+        <div id="logo"></div>
+
+                                        <!-- ENTETE MENU  -->
+
+            <nav class="navbar navbar-expand-sm   navbar-light bg-dark" style="color:#FFF ;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html" style="color:#FFF ;">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="catalogue.html" style="color:#FFF ;">Catalogue</a>
+                    </li>
+                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#FFF ;">Contacts</a>
+                  </li>
+                   <!--<li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                      <a class="dropdown-item" href="#">Link 4</a>
+                      <a class="dropdown-item" href="#">Link 5</a>
+                      <a class="dropdown-item" href="#">Link 6</a>
+                    </div>
+                  </li> -->
+                  </ul>
+                  <div class="social-part">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </nav>
+
+        <!---------------      PANIER     --------------------->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-10 " style="margin-left: auto ; margin-right: auto;"> 
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Produit</th>
+                                <th>Quantité</th>
+                                <th class="text-center">Prix</th>
+                                <th class="text-center">Total</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-8 col-md-6">
+                                <div class="media">
+                                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" style="margin: 10px; "><a href="#">Product name</a></h4>
+                                        <h5 class="media-heading" style="margin: 10px; "> by <a href="#">Brand name</a></h5>
+                                        <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                    </div>
+                                </div></td>
+                                <td class="col-sm-1 col-md-1" style="text-align: center ;">
+                                  3
+                                </td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                                <td class="col-sm-1 col-md-1">
+                                <button type="button" class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span> Supprimer
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">
+                                <div class="media">
+                                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" style="margin: 10px;"><a href="#">Product name</a></h4>
+                                        <h5 class="media-heading" style="margin: 10px; "> by <a href="#">Brand name</a></h5>
+                                        <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                                    </div>
+                                </div></td>
+                                <td class="col-md-1" style="text-align: center"> 2
+                                </td>
+                                <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                                <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                                <td class="col-md-1">
+                                <button type="button" class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span> Supprimer
+                                </button></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>   </td>
+                                <td><h3>Total</h3></td>
+                                <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>
+                                <a href="index.html"> <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Continuer les achats
+                                </button> </a> </td>
+                                <td>
+                                <button type="button" class="btn btn-success">
+                                    Payer <span class="glyphicon glyphicon-play"></span>
+                                </button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+                                       
+            <div id="seperate1"></div>
+
+            
+                                                    <!-- FOOTER -->
+            
+    <div id="footer">
+        <footer class="section footer-classic context-dark bg-image" style="background: rgb(255, 123, 0);">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contacts</h5>
+                  <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a href="tel:#">https://karosearch.com</a>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                  <h5>Links</h5>
+                  <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+
+    </div>
+
+    <script src="bootstrap-4.4.1/js/jquery.min.js" ></script>
+    <script src="bootstrap-4.4.1/js/popper.min.js" ></script>
+    <script src="bootstrap-4.4.1/js/bootstrap.min.js" ></script>
+    <script src="js/catalogue.js"></script>
+</body>
+</html>
